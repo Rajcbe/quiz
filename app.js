@@ -15,4 +15,8 @@ form.addEventListener('submit',(e)=>{
 
     });
     console.log(score);
+  let scoreContainer=document.querySelector('.score');
+    document.getElementById('scoreUpdate').innerHTML=`${score}%`;
+    scoreContainer.classList.remove('d-none');
+
 });
